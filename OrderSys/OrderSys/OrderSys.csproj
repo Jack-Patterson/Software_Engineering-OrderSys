@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Oracle.ManagedDataAccess.Core" Version="3.21.50" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="frmAdmin\frmYearSupAnaly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmAdmin\frmYearRevAnaly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmOrders\frmOrdLisOstPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmOrders\frmOrdPlace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmOrders\frmOrdInvPay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmProducts\frmUpdProd.cs" />
+    <Compile Update="frmProducts\frmDiscProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmSuppliers\frmUpdSup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmProducts\frmAddProd.cs" />
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
